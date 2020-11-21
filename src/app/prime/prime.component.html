@@ -1,0 +1,25 @@
+<div class="container" [style.padding-bottom.px]="dynamicPadding">
+  <div class="intro">
+    <h1>{{title}}</h1>
+    <p>Please introduce the last number : 'n'</p>
+    <br>
+    <p>You'll get the prime numbers from 2 to the chosen n</p>
+    <p>100.000 takes about 5 seconds</p>
+    <label>
+      <input type="number" (keyup.enter)="doPrimeCall()" [(ngModel)]="grenzwert" [placeholder]="123456" name="prime"/>
+      Grenzwert
+    </label>
+    <button  (click)="doPrimeCall()">Introduce 'n'</button>
+  </div>
+
+  <div class="primes">
+   <ng-container *ngFor=" let prime of primeNumbers; last  as l">
+       {{prime}}<span *ngIf="!l">, </span> <br>
+   </ng-container>
+    <!-- <ul>
+      <li *ngFor="let prime of primeNumbers">
+        {{prime}}
+      </li>
+    </ul> -->
+  </div>
+</div>

@@ -1,0 +1,21 @@
+p, h1, button {
+  font-family: Lato;
+}
+
+.container {
+  width: 400px;
+  margin: auto;
+  border: 2px solid purple;
+  padding: 15px;
+  padding-bottom: 400px;
+  border-radius: 50px;
+}
+
+::placeholder{
+  color: darkgray;
+}
+@media screen and (min-width: 688px){
+  br {
+    display: none;
+  }
+}

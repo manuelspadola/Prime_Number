@@ -61,7 +61,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "PrimeNumber:build"
+            "browserTarget": "PrimeNumber:build",
+            "proxyConfig": "proxy.conf.json"
           },
           "configurations": {
             "production": {
@@ -120,5 +121,8 @@
       }
     }
   },
-  "defaultProject": "PrimeNumber"
+  "defaultProject": "PrimeNumber",
+  "cli": {
+    "analytics": false
+  }
 }
