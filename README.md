@@ -1,3 +1,6 @@
+Der Backend Server befindet sich im Demo Ordner sorry
+
+
 # PrimeNumber
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.2.
